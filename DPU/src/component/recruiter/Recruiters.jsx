@@ -8,13 +8,27 @@ function Recruiters() {
       
       <div className={style.scrollContainer}>
         <div className={style.scrollContent}>
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/1.jpg" alt="Recruiter 1" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/6.jpg" alt="Recruiter 2" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/5.jpg" alt="Recruiter 3" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/4.jpg" alt="Recruiter 4" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/3.jpg" alt="Recruiter 5" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/8.jpg" alt="Recruiter 6" />
-          <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/2.jpg" alt="Recruiter 7" />
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/1.jpg" alt="Recruiter 1" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/6.jpg" alt="Recruiter 2" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/5.jpg" alt="Recruiter 3" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/4.jpg" alt="Recruiter 4" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/3.jpg" alt="Recruiter 5" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/8.jpg" alt="Recruiter 6" />
+          </div>
+          <div className={style.imageWrapper}>
+            <img src="https://acs.dypvp.edu.in/assets/images/acs-img/recruiters/2.jpg" alt="Recruiter 7" />
+          </div>
         </div>
       </div>
     </div>
