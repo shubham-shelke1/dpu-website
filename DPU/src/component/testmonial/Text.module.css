@@ -1,0 +1,65 @@
+.alll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 10%;
+    background-color: rgb(177, 195, 195);
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Image Styling */
+.images img {
+    height: 260px;  
+    width: auto;
+    border-radius: 10%;
+    border: 10px solid red;
+    max-width: 100%;
+    
+}
+
+/* Text Styling */
+.text h2 {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    font-size: 39px;
+    text-align: justify;
+    
+}
+.text p{
+    text-align: justify;
+}
+
+/* Button Styling */
+.view {
+    padding: 10px 20px;
+    width: 200px;
+    border: none; 
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 20px auto; /* Centers the button */
+}
+
+.view:hover {
+    background: darkorange;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .alll {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .view {
+        margin-left: 0; /* Center the button */
+    }
+}

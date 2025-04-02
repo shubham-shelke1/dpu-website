@@ -1,0 +1,70 @@
+/* Main container */
+.main {
+  background-color: #9a9da8;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Scrolling Container */
+.scrollContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+/* Scrolling Content */
+.scrollContent {
+  display: flex;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
+
+/* Image Styling */
+.scrollContent img {
+  width: 150px;
+  height: auto;
+  border: 3px solid #9b9ba3;
+  border-radius: 27px;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.scrollContent img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .scrollContent img {
+    width: 120px;
+  }
+
+  .scrollContent {
+    animation-duration: 15s; /* Slower animation on smaller screens */
+  }
+}

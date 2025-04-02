@@ -1,0 +1,229 @@
+/* General Navbar Styling */
+.navbar {
+  /* width: 100%; */
+  color: white;
+  top: 0;
+  position: sticky;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(70, 3, 3);
+  /* z-index: 1000; */
+}
+
+/* Header Styling */
+.h, .con {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.h h3, .con h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Scrolling Announcement */
+.upper {    
+  /* background-color: #d9b00c; */
+  padding: 2px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  
+  background-color:rgb(241, 230, 28)
+  ;
+}
+
+/* Scrolling Text Container */
+.scrollingText {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* background-color: #ffd700; */
+  padding: 5px 0;
+}
+
+.scrollingText p {
+  /* display: flex; */
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scrollingText img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(145, 22, 22);
+  padding: 10px 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(110,15,15);
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdownMenu,
+.dropdownMenu.show {
+  display: block;
+}
+
+/* Sub-dropdown */
+.subDropdown {
+  position: relative;
+}
+
+.subDropdownMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgb(110, 15, 15);
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subDropdown:hover .subDropdownMenu,
+.subDropdownMenu.show {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdownMenu li, .subDropdownMenu li {
+  list-style: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.dropdownMenu li a, .subDropdownMenu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+     
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .dropdownMenu,
+  .subDropdownMenu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgb(88, 10, 10);
+  }
+
+  .dropdownMenu a {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .dropdown:hover .dropdownMenu {
+    display: block;
+  }
+
+  .scrollingText p {
+    font-size: 14px;
+    animation: scrollText 15s linear infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  .h h3, .con h3 {
+    font-size: 16px;
+  }
+
+  .scrollingText p {
+    font-size: 12px;
+    animation: scrollText 12s linear infinite;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
+  .dropdownMenu a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .dropdown:hover .dropdownMenu {
+    display: block;
+  }
+}
+

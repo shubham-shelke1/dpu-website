@@ -1,0 +1,67 @@
+/* Main container for alignment */
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #73a487; /* Optional background */
+    width: 100%;
+  }
+  
+  /* Image container */
+  .as {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    justify-content: center;
+    gap: 90px; /* Space between images */
+  }
+  .as h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(22, 109, 163, 0.813);
+  }
+  
+  /* Partner Images */
+  .as img {
+    width: 120px; /* Default image size */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .as img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .as img {
+      width: 160px; /* Adjust image size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .as {
+      gap: 15px; /* Reduce space between images */
+    }
+  
+    .as img {
+      width: 140px; /* Smaller images for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .as {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .as img {
+      width: 120px; /* Smaller images for mobile */
+    }
+  }
+  

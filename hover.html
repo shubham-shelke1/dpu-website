@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Dropdown</title>
+    <style>
+        /* Main menu styles */
+        .about {
+            position: relative; /* Needed for absolute positioning of dropdown */
+            display: inline-block;
+            padding: 10px;
+            background: lightgray;
+            cursor: pointer;
+        }
+
+        /* First dropdown */
+        .hovers {
+            display: none;
+            background-color: black;
+            position: absolute;
+            top: 100%; /* Position it below the .about */
+            left: 0;
+            width: 150px;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        .about:hover .hovers {
+            display: block;
+        }
+
+        .hovers a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+        .hovers a:hover {
+            background: gray;
+        }
+
+        /* Sub-menu (Second dropdown) */
+        .aboutChild {
+            position: relative;
+            display: block;
+            color: white;
+            padding: 5px;
+        }
+
+        .aboutChild2 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Makes it appear to the right */
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 20;
+            white-space: nowrap;
+        }
+
+        .aboutChild:hover .aboutChild2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="about">
+            About
+            <div class="hovers">
+                <a href="#">About Child 1</a>
+                <div class="aboutChild">
+                    <a href="#">About Child 2 ▶</a>
+                    <div class="aboutChild2">
+                        <h4>Hey, this is a sub-menu</h4>
+                        <p>More details here...</p>
+                    </div>
+                </div>
+                <a href="#">Another Child</a>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+.all{
+    background-color: #312466ce;
+    padding: 3%;
+    
+}.wel{
+    
+display: flex;
+padding-left: 47%;
+text-align: center;
+font-size: 250%;
+color: white ;
+
+
+}
+br{
+    color: rgb(140, 240, 168);
+}
+.all h3{
+    color: white;
+text-align: center;
+font-size: 110%;
+padding-bottom: 1%;
+}
