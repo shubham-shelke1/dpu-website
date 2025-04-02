@@ -2,8 +2,11 @@
 .navbar {
   /* width: 100%; */
   color: white;
+<<<<<<< HEAD
   top: 0;
   /* position: sticky; */
+=======
+>>>>>>> 748f479475ed1922ea9315288e14ee78bb816c9c
   font-family: Arial, sans-serif;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   background-color: rgb(70, 3, 3);
