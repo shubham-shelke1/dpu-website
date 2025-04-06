@@ -20,6 +20,7 @@ import Footer from './component/footer/Footer'
 import InternshipPages from './pages/InternshipPages'
 import GallaryPages from './pages/GallaryPages'
 import Form from './component/form/Form'
+import Count from './component/count/Count'
 
 
 
@@ -54,6 +55,10 @@ function App() {
         <Route path="internship" element={<InternshipPages/>} />
         <Route path="gallary" element={<GallaryPages/>} />
         <Route path="/form" element={<Form />} />
+                <Route path="/count" element={<Count/>} />
+
+        
+
 
 
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import Hero from '../component/aboutus/hero/Hero'
-import Footer from '../component/footer/Footer'
+import Count from '../component/count/Count'
 
 function AboutusPages() {
   return (
 <>
-<Hero/>
+<Hero/>  
+<Count/>
 
-{/* <Footer/> */}
 </>  )
 }
 

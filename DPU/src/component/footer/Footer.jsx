@@ -51,7 +51,7 @@ function Footer() {
           <h1>Locate us</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15202.570646263937!2d73.82272!3d18.621309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b857cadcb92d%3A0x492821714b4205bd!2sDr.%20D.%20Y.%20Patil%20Arts%2C%20Commerce%20%26%20Science%20College!5e1!3m2!1sen!2sin!4v1741254690645!5m2!1sen!2sin"
-            width="400"
+            width="390"
             height="300"
             style={{ border: 0 }}
             allowFullScreen

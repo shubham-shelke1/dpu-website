@@ -11,7 +11,7 @@
   /* Header Styling */
   
   .ab {
-    background-image: url('/bg-img.jpg');
+    background-image: url('D:\REACT\DPU\DPU\public\bg-img.jpg');
     width: 100%;
      /* Adjust height as needed */
     background-size: cover;

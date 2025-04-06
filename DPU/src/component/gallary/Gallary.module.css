@@ -1,57 +1,114 @@
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
-    /* gap: 100%;   
-     */
-    background-color: #f4f4f4;
-  }
-  
+.imges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.imges img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.imges img:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modalContent img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .imges {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 45px;
+      gap: 20px;
   }
   
   .imges img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    /* gap: 45%; */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+      height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+      padding: 30px 15px;
   }
   
-  .imges img:hover {
-    transform: scale(1.05);
+  .imges {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
   }
   
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .imges img {
+      height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+      padding: 20px 10px;
   }
   
-  .modalContent {
-    max-width: 90%;
-    max-height: 90%;
+  .imges {
+      grid-template-columns: 1fr;
+      gap: 15px;
   }
   
-  .modalContent img {
-    width: 100%;
-    height: auto;
-    max-height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  .imges img {
+      height: 200px;
   }
-  
+}
+
+/* Close button for modal */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover {
+  color: #ccc;
+}

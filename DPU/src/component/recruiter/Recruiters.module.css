@@ -9,9 +9,11 @@
   font-size: 2rem;
   color: #333;
   margin-bottom: 30px;
+  
   position: relative;
   display: inline-block;
 }
+
 
 .heading::after {
   content: '';
